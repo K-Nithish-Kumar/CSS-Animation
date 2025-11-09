@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #090909;
+}
+
+.mainContainer {
+   border: 1px solid red;
+   padding: 10px 20px;
+    overflow: hidden;
+  
+}
+
+.btn {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background-color: #000;
+    font-size: 18px;
+    color: #42fefb;
+    overflow: hidden;
+}
+
+div span:nth-child(1) {
+    position: absolute;
+    top:46vh;
+    left:40.5vw;
+    width:19%;
+    height:2px;
+    background-color:  #42fefb;
+    overflow: hidden;
+    /* border: 1px solid yellow; */
+    animation: animate 0.3s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+    
+}
+
+div span:nth-child(2) {
+    position: absolute;
+    top:46vh;
+    left:40.5vw;
+    width:0.2%;
+    height:60px;
+    background-color:  #42fefb;
+    /* border: 1px solid yellow; */
+}
+
+div span:nth-child(3) {
+    position: absolute;
+    top:54vh;
+    left:40.5vw;
+    width:19%;
+    height:2px;
+    background-color:  #42fefb;
+    animation: animate01 0.3s infinite;
+    overflow: hidden;
+    /* border: 1px solid yellow; */
+}
+
+@keyframes animate01 {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+    
+}
+
+div span:nth-child(4) {
+    position: absolute;
+    top:46vh;
+    right:40.5vw;
+    width:0.2%;
+    height:60px;
+    background-color:  #42fefb;
+    /* border: 1px solid yellow; */
+}
