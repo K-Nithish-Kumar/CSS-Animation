@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Outfit:wght@100..900&family=Roboto+Slab:wght@100..900&family=Stack+Sans+Headline:wght@200..700&family=Stack+Sans+Notch:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    font-size: 10em;
+    font-family: 'Roboto Slab',serif;
+    letter-spacing: 15px;
+    background: url("../images/Nature.jpg") no-repeat;
+    box-sizing: border-box;
+    background-size: cover;
+    color: #3a0990;
+}
+
+
+.name-container span {
+    animation: text 1s forwards ease-in-out;
+    opacity: 0;
+}
+
+.name-container span:nth-child(1){
+    animation-delay: 1s;
+}
+
+.name-container span:nth-child(2){
+    animation-delay: 1.3s;
+}
+
+.name-container span:nth-child(3){
+    animation-delay: 1.6s;
+}
+
+.name-container span:nth-child(4){
+    animation-delay: 1.9s;
+}
+
+.name-container span:nth-child(5){
+    animation-delay: 2.2s;
+}
+
+.name-container span:nth-child(6){
+    animation-delay: 2.5s;
+}
+
+.name-container span:nth-child(7){
+    animation-delay: 2.8s;
+}
+
+@keyframes text {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
